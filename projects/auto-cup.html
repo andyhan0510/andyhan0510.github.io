@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automated Acetabular Cup Planning and Native Anatomy Restoration (Auto-Cup) | Xuzheng (Andy) Han</title>
+  <meta name="description" content="Maps every anatomically admissible acetabular cup position for an individual patient and quantifies the trade-offs between hip-center restoration, bone coverage, and bone removal.">
+  <meta name="author" content="Xuzheng Han">
+  <meta property="og:title" content="Automated Acetabular Cup Planning and Native Anatomy Restoration (Auto-Cup) | Xuzheng (Andy) Han">
+  <meta property="og:description" content="Maps every anatomically admissible acetabular cup position for an individual patient and quantifies the trade-offs between hip-center restoration, bone coverage, and bone removal.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">Xuzheng (Andy) Han</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.body.classList.toggle('menu-open'))">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="../index.html">About</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../talks.html">Talks</a>
+      <a href="../projects.html" class="active" aria-current="page">Projects</a>
+      <a href="../cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR / PROFILE (same on every page) ============ -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img class="avatar" src="../assets/profile.jpg" alt="Xuzheng Han">
+      <p class="name">Xuzheng (Andy) Han</p>
+      <p class="role">Ph.D., Mechanical Engineering</p>
+      <p class="affil">Center for Orthopaedic Biomechanics<br>University of Denver</p>
+      <ul class="links">
+        <li><span class="ic">📍</span>Denver, Colorado, USA</li>
+        <li><span class="ic">✉️</span><a href="mailto:hanxuzheng0510@gmail.com">hanxuzheng0510@gmail.com</a></li>
+        <li><span class="ic">🎓</span><a href="https://scholar.google.com/citations?user=2-iZHD8AAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><span class="ic">🆔</span><a href="https://orcid.org/0000-0001-9798-607X">ORCID</a></li>
+        <!-- 以后有 LinkedIn / ResearchGate 时取消注释并填入链接
+        <li><span class="ic">💼</span><a href="https://www.linkedin.com/in/YOUR_ID">LinkedIn</a></li>
+        <li><span class="ic">🔬</span><a href="https://www.researchgate.net/profile/YOUR_ID">ResearchGate</a></li>
+        -->
+        <li><span class="ic">📄</span><a href="../assets/Xuzheng_Han_CV.pdf">Download CV (PDF)</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="content">
+
+    <article class="project-detail">
+      <p class="crumb"><a href="../projects.html">← All projects</a></p>
+      <h1 class="page-title">Automated Acetabular Cup Planning and Native Anatomy Restoration (Auto-Cup)</h1>
+      <p class="pf-date">Jan 2026 – Nov 2026 · Ph.D. dissertation, Chapter 5 · Accepted for presentation at ORS 2027</p>
+      <figure class="project-fig">
+        <img src="../assets/figures/cup-planning.jpg" alt="Automated Acetabular Cup Planning and Native Anatomy Restoration (Auto-Cup)" loading="lazy">
+        <figcaption>Patient-specific cup-placement framework: admissible cup-center region, bone coverage, and comparison of experimental, native-center, teardrop, and best-fit placements.</figcaption>
+      </figure>
+      <h3>Background &amp; approach</h3>
+      <p>Surgeons commonly aim to restore the patient’s native hip center during THA, but cup placement is limited by bony constraints, cup coverage, exposed cup surface, and the amount of bone removed. A patient’s acetabulum therefore permits a range of feasible positions rather than a single target.</p>
+      <p>I developed a CT-based framework that generates all candidate cup positions and keeps those with &gt;90% of the upper cup surface within the acetabular rim and &gt;70% of the fixation surface in contact with bone. The best-fit position is the valid one closest to the native center. The framework was verified against 24 cadaveric THAs with postoperative optical scans and then applied to 200 native hips.</p>
+      <h3>Key findings</h3>
+      <ul class="findings">
+        <li>Best-fit placement was a median <strong>2.60 mm</strong> from the experimentally implanted cup (native-center 3.40 mm, teardrop 5.85 mm); the closest valid position was within RMS 1.43 ± 0.17 mm.</li>
+        <li>Best-fit and surgically implanted placements did not differ in coverage or bone removal.</li>
+        <li>In 200 hips, the native acetabular center was a valid cup position in <strong>183 hips (91.5%)</strong>.</li>
+        <li>Teardrop referencing gave the greatest coverage (95.6%) and least anterior exposure but required the most bone removal (16.0 cm³).</li>
+        <li>Rim and fossa-floor geometry were associated with coverage, bone removal, and anterior prominence; native version and depth mainly with prominence.</li>
+      </ul>
+      <h3>Significance</h3>
+      <p>Patient-specific cup-center maps can help surgeons balance hip-center restoration, host-bone coverage, bone preservation, and anterior containment before final cup placement.</p>
+      <h3>Methods &amp; tools</h3>
+      <p>MATLAB, CT segmentation and 3D reconstruction, optical scanning, registration, constrained optimization</p>
+      <h3>Related publications &amp; presentations</h3>
+      <ul class="outputs">
+        <li><span class="me">Han X</span>, Yang H, Zigan CM, Rajpura A, Board TN, Myers CA, Clary CW. Patient-Specific Acetabular Anatomy Defines an Admissible Cup-Placement Region and Geometric Trade-Offs in Total Hip Arthroplasty. <em>Manuscript in preparation</em>.</li>
+        <li><span class="me">Han X</span>, et al. Validation of a Patient-Specific Admissible Acetabular Cup-Center Region and Placement Trade-Offs in THA. <em>ORS 2027 Annual Meeting</em>, San Francisco, CA (accepted).</li>
+      </ul>
+      <nav class="pager"><a href="iliopsoas-after-tha.html">← Iliopsoas Contact and Excursion After Virtual Total Hip Arthroplasty</a><a href="native-iliopsoas.html">Native Iliopsoas–Bone Contact and Excursion Across Hip Postures →</a></nav>
+    </article>
+
+    <footer class="footer">
+      © <span id="yr">2026</span> Xuzheng Han · Last updated November 2026
+    </footer>
+  </main>
+</div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

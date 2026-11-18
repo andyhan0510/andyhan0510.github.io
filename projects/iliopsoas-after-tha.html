@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iliopsoas Contact and Excursion After Virtual Total Hip Arthroplasty | Xuzheng (Andy) Han</title>
+  <meta name="description" content="Simulates passive extension and gait in 130 virtually reconstructed hips to determine how cup overhang and femoral stem design drive iliopsoas impingement after THA.">
+  <meta name="author" content="Xuzheng Han">
+  <meta property="og:title" content="Iliopsoas Contact and Excursion After Virtual Total Hip Arthroplasty | Xuzheng (Andy) Han">
+  <meta property="og:description" content="Simulates passive extension and gait in 130 virtually reconstructed hips to determine how cup overhang and femoral stem design drive iliopsoas impingement after THA.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">Xuzheng (Andy) Han</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.body.classList.toggle('menu-open'))">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="../index.html">About</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../talks.html">Talks</a>
+      <a href="../projects.html" class="active" aria-current="page">Projects</a>
+      <a href="../cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR / PROFILE (same on every page) ============ -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img class="avatar" src="../assets/profile.jpg" alt="Xuzheng Han">
+      <p class="name">Xuzheng (Andy) Han</p>
+      <p class="role">Ph.D., Mechanical Engineering</p>
+      <p class="affil">Center for Orthopaedic Biomechanics<br>University of Denver</p>
+      <ul class="links">
+        <li><span class="ic">📍</span>Denver, Colorado, USA</li>
+        <li><span class="ic">✉️</span><a href="mailto:hanxuzheng0510@gmail.com">hanxuzheng0510@gmail.com</a></li>
+        <li><span class="ic">🎓</span><a href="https://scholar.google.com/citations?user=2-iZHD8AAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><span class="ic">🆔</span><a href="https://orcid.org/0000-0001-9798-607X">ORCID</a></li>
+        <!-- 以后有 LinkedIn / ResearchGate 时取消注释并填入链接
+        <li><span class="ic">💼</span><a href="https://www.linkedin.com/in/YOUR_ID">LinkedIn</a></li>
+        <li><span class="ic">🔬</span><a href="https://www.researchgate.net/profile/YOUR_ID">ResearchGate</a></li>
+        -->
+        <li><span class="ic">📄</span><a href="../assets/Xuzheng_Han_CV.pdf">Download CV (PDF)</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="content">
+
+    <article class="project-detail">
+      <p class="crumb"><a href="../projects.html">← All projects</a></p>
+      <h1 class="page-title">Iliopsoas Contact and Excursion After Virtual Total Hip Arthroplasty</h1>
+      <p class="pf-date">May 2026 – Nov 2026 · Ph.D. dissertation, Chapter 6 · Manuscript in preparation</p>
+      <figure class="project-fig">
+        <img src="../assets/figures/virtual-tha-workflow.jpg" alt="Iliopsoas Contact and Excursion After Virtual Total Hip Arthroplasty" loading="lazy">
+        <figcaption>Workflow integrating the femoral implantation, native iliopsoas, and acetabular implantation models, solved in Abaqus/Explicit.</figcaption>
+      </figure>
+      <h3>Background &amp; approach</h3>
+      <p>Iliopsoas irritation is a common cause of persistent groin pain after total hip arthroplasty (THA), but the mechanics of psoas impingement on the implant remain incompletely characterized.</p>
+      <p>This project combined three models developed in my doctoral work: the CT-based native iliopsoas finite element model, the anatomy-constrained acetabular cup-placement framework, and an experimentally validated femoral implantation algorithm. Together they produced 130 virtually reconstructed hips from 65 specimens, which were simulated through passive extension and gait.</p>
+      <h3>Key findings</h3>
+      <ul class="findings">
+        <li>Psoas–cup contact occurred in 26.9% of hips during extension and 36.2% during gait, compared with 44.6% and 73.8% for psoas–femoral head contact.</li>
+        <li>Among hips with contact, gait contact excursion was greater on the cup than on the femoral head (8.7 ± 5.5 vs. 3.4 ± 1.8 mm).</li>
+        <li>Maximum anterior cup overhang correlated with the likelihood of psoas–cup contact (Spearman’s ρ = 0.47–0.50).</li>
+        <li>During gait, cup contact occurred in <strong>61.3%</strong> of hips with both anteroposterior and mediolateral overhang, vs. 14.3% and 16.7% with isolated overhang, and in none of the 11 hips without overhang.</li>
+        <li>In 47 hips with contact, high-offset femoral stems reduced cumulative cup contact area (mean difference −3.5 mm²; Holm-adjusted p = 0.006).</li>
+      </ul>
+      <h3>Significance</h3>
+      <p>The results indicate that psoas–cup contact is most likely when the cup overhangs in both directions, and that femoral stem offset is a modifiable factor that may reduce this contact. Both components should be evaluated together when planning THA.</p>
+      <h3>Methods &amp; tools</h3>
+      <p>Abaqus/Explicit, MATLAB, CT-based finite element modeling, virtual implantation, Spearman correlation, Holm-adjusted paired comparisons</p>
+      <h3>Related publications &amp; presentations</h3>
+      <ul class="outputs">
+        <li><span class="me">Han X</span>, Yang H, Board TN, Myers CA, Rullkoetter PJ, Clary CW. Iliopsoas Contact and Excursion After Virtual Total Hip Arthroplasty in 130 Hips. <em>Manuscript in preparation</em>.</li>
+      </ul>
+      <nav class="pager"><span></span><a href="auto-cup.html">Automated Acetabular Cup Planning and Native Anatomy Restoration (Auto-Cup) →</a></nav>
+    </article>
+
+    <footer class="footer">
+      © <span id="yr">2026</span> Xuzheng Han · Last updated November 2026
+    </footer>
+  </main>
+</div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
